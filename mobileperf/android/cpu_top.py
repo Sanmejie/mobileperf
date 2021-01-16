@@ -340,6 +340,12 @@ class CpuCollector(object):
             logger.error(e)
         while not self._stop_event.is_set() and time.time() < end_time:
             try:
+                course = os.system('adb shell pidof com.deskmateones') # TODO 调起同桌100
+                if course == 1:
+                    print("检查到同桌100没有运行，正在尝试调起")
+                    os.system('adb shell am broadcast -a com.baidu.duer.query -e q "打开同桌100"')
+                else:
+                    pass
                 logger.debug("---------------cpuinfos, into _collect_package_cpu_thread loop thread is : " + str(threading.current_thread().name))
                 before = time.time()
                 #为了cpu值的准确性，将采集的时间间隔放在top命令中了

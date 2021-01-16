@@ -1,0 +1,685 @@
+[2021-01-16 13:18:10,348]DEBUG:mobileperf:startup:RuntimeData.top_dir:D:\测试开发\mobileperf
+[2021-01-16 13:18:10,350]DEBUG:mobileperf:startup:configpath:D:\测试开发\mobileperf\config.conf
+[2021-01-16 13:18:10,351]DEBUG:mobileperf:startup:{'package': ['com.deskmateones'], 'pid_change_focus_package': '', 'frequency': 5, 'dumpheap_freq': 3600, 'timeout': 259200, 'serialnum': '6S192333465E050E', 'mailbox': '390125133@qq.com', 'exceptionlog': ['fatal exception', 'has died'], 'save_path': './mobileperf_output', 'phone_log_path': ['/data/anr'], 'monkey': 'true', 'main_activity': '', 'activity_list': ''}
+[2021-01-16 13:18:10,525]DEBUG:mobileperf:androiddevice:b'List of devices attached\r\n6S192333465E050E\tdevice\r\n\r\n'
+[2021-01-16 13:18:10,526]DEBUG:mobileperf:androiddevice:system have adb
+[2021-01-16 13:18:10,528]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -l /data/local/tmp
+[2021-01-16 13:18:10,707]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -l /data/local/tmp time consume: 0.15900111198425293
+[2021-01-16 13:18:10,708]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -l /data/local/tmp/com.deskmateones_dumpheap_2021_01_16_07_32_41.hprof
+[2021-01-16 13:18:10,900]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -l /data/local/tmp/com.deskmateones_dumpheap_2021_01_16_07_32_41.hprof time consume: 0.17099833488464355
+[2021-01-16 13:18:10,900]DEBUG:mobileperf:androiddevice:2021-01-16 07:32
+[2021-01-16 13:18:10,903]DEBUG:mobileperf:androiddevice:/data/local/tmp/com.deskmateones_dumpheap_2021_01_16_07_32_41.hprof is not overtime days:3
+[2021-01-16 13:18:11,000]DEBUG:mobileperf:androiddevice:adb devices:
+[2021-01-16 13:18:11,000]DEBUG:mobileperf:androiddevice:['List of devices attached', '6S192333465E050E\tdevice', '']
+[2021-01-16 13:18:11,000]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell pm list packages
+[2021-01-16 13:18:13,677]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell pm list packages time consume: 2.6560018062591553
+[2021-01-16 13:18:13,677]DEBUG:mobileperf:androiddevice:['package:com.github.uiautomator', 'package:com.mediatek.gba', 'package:com.mgtv.tv', 'package:io.appium.settings', 'package:com.android.providers.media', 'package:air.com.gongfubb.wksz', 'package:com.android.documentsui', 'package:android.auto_generated_rro__', 'package:com.android.externalstorage', 'package:com.mediatek.ygps', 'package:com.mediatek.simprocessor', 'package:com.baidu.input_baidutv', 'package:com.android.companiondevicemanager', 'package:com.android.mms.service', 'package:vulture.safemode', 'package:com.android.providers.downloads', 'package:com.github.uiautomator.test', 'package:com.baidu.duershowprovison', 'package:com.ktcp.aiagent', 'package:com.android.browser', 'package:io.appium.uiautomator2.server', 'package:com.android.defcontainer', 'package:com.mirageengine.tv.xxtbkt', 'package:com.deskmateones', 'package:com.android.providers.downloads.ui', 'package:com.android.certinstaller', 'package:android', 'package:com.baidu.duershow.swan', 'package:com.baidu.duershow.h5container', 'package:com.android.mtp', 'package:com.android.backupconfirm', 'package:com.mediatek.security', 'package:com.mediatek.bluetooth.dtt', 'package:com.android.statementservice', 'package:com.mediatek.mdmlsample', 'package:com.android.documentsui.auto_generated_rro__', 'package:com.wyt.iexuetang.hd.xxtb', 'package:com.mediatek.providers.drm', 'package:com.android.systemui.theme.dark', 'package:com.tencent.qqlive.audiobox', 'package:com.android.providers.settings', 'package:com.android.sharedstoragebackup', 'package:com.nemo.libvncserver', 'package:com.android.inputdevices', 'package:com.mediatek', 'package:com.baidu.duershow.statistic', 'package:com.sinyee.babybus.shopping', 'package:android.ext.shared', 'package:com.duwo.reading', 'package:com.android.keychain', 'package:com.android.chrome', 'package:android.ext.services', 'package:com.baidu.duer.ota', 'package:com.baidu.oases', 'package:com.android.calllogbackup', 'package:com.android.packageinstaller', 'package:com.qiyi.video.speaker', 'package:com.example.android.home', 'package:com.android.proxyhandler', 'package:com.jiuqu.app.live.baidu', 'package:com.tal.abctimelibrary.robot', 'package:com.android.managedprovisioning', 'package:ai.zile.duer', 'package:com.mediatek.thermalmanager', 'package:com.mediatek.callrecorder', 'package:io.appium.uiautomator2.server.test', 'package:com.mediatek.webview', 'package:com.baidu.duer.cloudapp', 'package:cn.cmvideo.car.play', 'package:com.android.storagemanager', 'package:com.baidu.duer.thridapp', 'package:com.android.bookmarkprovider', 'package:com.android.settings', 'package:com.mediatek.mdmconfig', 'package:com.baidu.launcher', 'package:com.sinyee.babybus.recommendapp', 'package:com.android.shell', 'package:com.android.providers.blockednumber', 'package:com.android.providers.userdictionary', 'package:vulture.watchdog', 'package:com.android.emergency', 'package:com.smile.gifmaker', 'package:com.android.location.fused', 'package:com.baidu.mesh.provisioner', 'package:com.mediatek.mtklogger', 'package:com.baidu.duershow.h5video', 'package:com.mediatek.sensorhub.ui', 'package:com.android.bluetooth', 'package:com.loovee.wawaji.mitv', 'package:com.android.providers.contacts', 'package:com.android.captiveportallogin', 'package:com.mediatek.mtklogger.proxy', 'package:com.mediatek.dataprotection']
+[2021-01-16 13:18:13,679]DEBUG:mobileperf:androiddevice:['com.github.uiautomator', 'com.mediatek.gba', 'com.mgtv.tv', 'io.appium.settings', 'com.android.providers.media', 'air.com.gongfubb.wksz', 'com.android.documentsui', 'android.auto_generated_rro__', 'com.android.externalstorage', 'com.mediatek.ygps', 'com.mediatek.simprocessor', 'com.baidu.input_baidutv', 'com.android.companiondevicemanager', 'com.android.mms.service', 'vulture.safemode', 'com.android.providers.downloads', 'com.github.uiautomator.test', 'com.baidu.duershowprovison', 'com.ktcp.aiagent', 'com.android.browser', 'io.appium.uiautomator2.server', 'com.android.defcontainer', 'com.mirageengine.tv.xxtbkt', 'com.deskmateones', 'com.android.providers.downloads.ui', 'com.android.certinstaller', 'android', 'com.baidu.duershow.swan', 'com.baidu.duershow.h5container', 'com.android.mtp', 'com.android.backupconfirm', 'com.mediatek.security', 'com.mediatek.bluetooth.dtt', 'com.android.statementservice', 'com.mediatek.mdmlsample', 'com.android.documentsui.auto_generated_rro__', 'com.wyt.iexuetang.hd.xxtb', 'com.mediatek.providers.drm', 'com.android.systemui.theme.dark', 'com.tencent.qqlive.audiobox', 'com.android.providers.settings', 'com.android.sharedstoragebackup', 'com.nemo.libvncserver', 'com.android.inputdevices', 'com.mediatek', 'com.baidu.duershow.statistic', 'com.sinyee.babybus.shopping', 'android.ext.shared', 'com.duwo.reading', 'com.android.keychain', 'com.android.chrome', 'android.ext.services', 'com.baidu.duer.ota', 'com.baidu.oases', 'com.android.calllogbackup', 'com.android.packageinstaller', 'com.qiyi.video.speaker', 'com.example.android.home', 'com.android.proxyhandler', 'com.jiuqu.app.live.baidu', 'com.tal.abctimelibrary.robot', 'com.android.managedprovisioning', 'ai.zile.duer', 'com.mediatek.thermalmanager', 'com.mediatek.callrecorder', 'io.appium.uiautomator2.server.test', 'com.mediatek.webview', 'com.baidu.duer.cloudapp', 'cn.cmvideo.car.play', 'com.android.storagemanager', 'com.baidu.duer.thridapp', 'com.android.bookmarkprovider', 'com.android.settings', 'com.mediatek.mdmconfig', 'com.baidu.launcher', 'com.sinyee.babybus.recommendapp', 'com.android.shell', 'com.android.providers.blockednumber', 'com.android.providers.userdictionary', 'vulture.watchdog', 'com.android.emergency', 'com.smile.gifmaker', 'com.android.location.fused', 'com.baidu.mesh.provisioner', 'com.mediatek.mtklogger', 'com.baidu.duershow.h5video', 'com.mediatek.sensorhub.ui', 'com.android.bluetooth', 'com.loovee.wawaji.mitv', 'com.android.providers.contacts', 'com.android.captiveportallogin', 'com.mediatek.mtklogger.proxy', 'com.mediatek.dataprotection']
+[2021-01-16 13:18:13,680]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk
+[2021-01-16 13:18:13,849]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk time consume: 0.14899992942810059
+[2021-01-16 13:18:13,850]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:18:14,711]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5 time consume: 0.8410012722015381
+[2021-01-16 13:18:14,712]DEBUG:mobileperf:cpu_top:sdk version : 27
+[2021-01-16 13:18:14,712]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk
+[2021-01-16 13:18:14,892]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk time consume: 0.15999984741210938
+[2021-01-16 13:18:14,892]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk
+[2021-01-16 13:18:15,065]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk time consume: 0.15400052070617676
+[2021-01-16 13:18:15,067]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.product.brand
+[2021-01-16 13:18:15,255]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.product.brand time consume: 0.16800165176391602
+[2021-01-16 13:18:15,255]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.product.model
+[2021-01-16 13:18:15,433]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.product.model time consume: 0.1550004482269287
+[2021-01-16 13:18:15,433]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.release
+[2021-01-16 13:18:15,627]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.release time consume: 0.1660008430480957
+[2021-01-16 13:18:15,627]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys package com.deskmateones
+[2021-01-16 13:18:15,847]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys package com.deskmateones time consume: 0.19999933242797852
+[2021-01-16 13:18:15,848]DEBUG:mobileperf:cpu_top:INFO: CpuCollector start...
+[2021-01-16 13:18:15,848]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor has started...
+[2021-01-16 13:18:15,848]DEBUG:mobileperf:meminfos:INFO: MemInfoPackageCollector start... 
+[2021-01-16 13:18:15,848]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:18:15,849]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:18:15,849]DEBUG:mobileperf:trafficstats:INFO: TrafficCollecor  start...
+[2021-01-16 13:18:15,850]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys package com.deskmateones
+[2021-01-16 13:18:15,850]DEBUG:mobileperf:trafficstats:INFO: TrafficMonitor has started...
+[2021-01-16 13:18:15,850]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency-clear
+[2021-01-16 13:18:15,851]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell mkdir /data/local/tmp
+[2021-01-16 13:18:16,138]DEBUG:mobileperf:androiddevice:adb error info:
+b"mkdir: '/data/local/tmp': File exists\r\n"
+[2021-01-16 13:18:16,138]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell mkdir /data/local/tmp time consume: 0.2559993267059326
+[2021-01-16 13:18:16,139]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell setenforce 0
+[2021-01-16 13:18:16,178]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys package com.deskmateones time consume: 0.30300092697143555
+[2021-01-16 13:18:16,178]DEBUG:mobileperf:trafficstats:line length：335
+[2021-01-16 13:18:16,179]DEBUG:mobileperf:trafficstats:getUid for pck: com.deskmateones, UID: 10063
+[2021-01-16 13:18:16,180]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:18:16,180]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:18:16,202]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency-clear time consume: 0.322998046875
+[2021-01-16 13:18:16,203]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys window windows
+[2021-01-16 13:18:16,348]DEBUG:mobileperf:androiddevice:adb error info:
+b"setenforce: Couldn't set enforcing status to '0': Permission denied\r\n"
+[2021-01-16 13:18:16,348]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell setenforce 0 time consume: 0.18900060653686523
+[2021-01-16 13:18:16,349]DEBUG:mobileperf:meminfos:-----------into _collect_mem_thread loop, thread is : Thread-24
+[2021-01-16 13:18:16,349]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones
+[2021-01-16 13:18:16,489]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.25800275802612305
+[2021-01-16 13:18:16,490]DEBUG:mobileperf:trafficstats: total uid  bytes : 4675364198
+[2021-01-16 13:18:16,491]DEBUG:mobileperf:trafficstats:{'package': 'com.deskmateones', 'total': 4675364198, 'total_packets': 4719158, 'rx': 4613353767, 'rx_packets': 3328798, 'tx': 62010431, 'tx_packets': 1390360, 'fg': 4675363934, 'bg': 264, 'lo': 0}
+[2021-01-16 13:18:16,491]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 0 uid pcket byte: 0
+[2021-01-16 13:18:16,491]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774296.4917798
+[2021-01-16 13:18:16,538]DEBUG:mobileperf:trafficstats:[1610774296.4917798, 'com.deskmateones', '10063', 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0.0, 0.0]
+[2021-01-16 13:18:16,542]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.3620007038116455
+[2021-01-16 13:18:16,685]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys window windows time consume: 0.4530003070831299
+[2021-01-16 13:18:16,686]DEBUG:mobileperf:androiddevice:dumpsys window windows命令activity_line_split结果: ['mCurrentFocus=Window{23b19f', 'u0', 'com.deskmateones/com.deskmateones.ui.activity.MainActivity1}']
+[2021-01-16 13:18:16,690]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk
+[2021-01-16 13:18:16,690]DEBUG:mobileperf:fps:FPS monitor has start!
+[2021-01-16 13:18:16,690]DEBUG:mobileperf:thread_num:INFO: ThreadNum PackageCollector start... 
+[2021-01-16 13:18:16,694]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell monkey -p com.deskmateones -v -v -v -s 1000 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --kill-process-after-error --pct-appswitch 20 --pct-touch 40 --pct-motion 10 --pct-trackball 0 --pct-anyevent 10 --pct-flip 0 --pct-pinchzoom 0 --throttle 1000 1200000000
+[2021-01-16 13:18:16,694]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:18:16,695]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk
+[2021-01-16 13:18:16,718]DEBUG:mobileperf:monkey:monkey_thread_func
+[2021-01-16 13:18:16,891]DEBUG:mobileperf:cpu_top:8.0 or higher, user_rate: 268, sys: 189,device cpu: 457
+[2021-01-16 13:18:16,891]DEBUG:mobileperf:cpu_top:idle_rate: 57
+[2021-01-16 13:18:16,892]DEBUG:mobileperf:cpu_top:cpuinfos, _parse top target_pck is : com.deskmateones , self.pacakgename : com.deskmateones
+[2021-01-16 13:18:16,892]DEBUG:mobileperf:cpu_top:cpuinfos, into _parse_pck packege is target package, pid is :23439
+[2021-01-16 13:18:16,893]DEBUG:mobileperf:cpu_top:=========== item == col_name: CPU] index : 8
+[2021-01-16 13:18:16,893]DEBUG:mobileperf:cpu_top:package: com.deskmateones, cpu_rate: 76.5
+[2021-01-16 13:18:16,893]DEBUG:mobileperf:cpu_top:{'package': 'com.deskmateones', 'pid': '23439', 'pid_cpu': '76.5', 'uid': 'u0_a63'}
+[2021-01-16 13:18:16,894]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 1.044999122619629
+[2021-01-16 13:18:16,894]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor save cpu_device_list: ['2021-01-16 13-18-16', '457', '268', '189', '57', 'com.deskmateones', '23439', '76.5']
+[2021-01-16 13:18:17,064]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk time consume: 0.3410015106201172
+[2021-01-16 13:18:17,064]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:18:17,105]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk time consume: 0.3900001049041748
+[2021-01-16 13:18:17,106]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.MainActivity1
+[2021-01-16 13:18:17,537]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.MainActivity1 time consume: 0.38900113105773926
+[2021-01-16 13:18:17,538]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:17,586]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones time consume: 1.221001386642456
+[2021-01-16 13:18:17,588]DEBUG:mobileperf:meminfos:dumpsys meminfo package time consume:1.2390000820159912
+[2021-01-16 13:18:17,588]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -l /data/local/tmp
+[2021-01-16 13:18:17,635]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.5509994029998779
+[2021-01-16 13:18:17,652]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task
+[2021-01-16 13:18:17,719]DEBUG:mobileperf:logcat:logcatmonitor start...
+[2021-01-16 13:18:17,727]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -c  -b all
+[2021-01-16 13:18:17,841]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.28300023078918457
+[2021-01-16 13:18:17,842]DEBUG:mobileperf:fps:[[47935.148068093, 47935.148068093, 47935.156600877], [47935.164588914, 47935.164588914, 47935.173532955], [47935.181110012, 47935.181110012, 47935.191404957], [47935.197630948, 47935.197630948, 47935.20692942], [47935.214151912, 47935.214151912, 47935.223374345], [47935.230672654, 47935.230672654, 47935.240446731], [47935.247193999, 47935.247193999, 47935.259178887], [47935.263714908, 47935.263714908, 47935.273885273], [47935.280235594, 47935.280235594, 47935.290996813], [47935.296756561, 47935.296756561, 47935.305648046], [47935.313277738, 47935.313277738, 47935.32471474], [47935.329798958, 47935.329798958, 47935.33815751], [47935.346320333, 47935.346320333, 47935.355776743], [47935.362841682, 47935.362841682, 47935.372081514], [47935.379361934, 47935.379361934, 47935.391227977], [47935.395882768, 47935.395882768, 47935.406697825], [47935.412403993, 47935.412403993, 47935.422097211], [47935.428925118, 47935.428925118, 47935.443292598], [47935.445446026, 47935.445446026, 47935.456629445], [47935.46196671, 47935.46196671, 47935.47798137], [47935.478487538, 47935.478487538, 47935.489827372], [47935.495008022, 47935.495008022, 47935.508961066], [47935.511527324, 47935.511527324, 47935.525591606], [47935.528047586, 47935.528047586, 47935.550038916], [47935.544567831, 47935.544567831, 47935.566048533], [47935.561088304, 47935.561088304, 47935.58550692], [47935.577608285, 47935.577608285, 47935.591599459], [47935.59412671, 47935.59412671, 47935.60837146], [47935.610646326, 47935.610646326, 47935.624037077], [47935.627167283, 47935.627167283, 47935.638674694], [47935.643687725, 47935.643687725, 47935.653919696], [47935.660208313, 47935.660208313, 47935.670961621], [47935.676728462, 47935.676728462, 47935.685953468], [47935.693249525, 47935.693249525, 47935.702140854], [47935.709770774, 47935.709770774, 47935.719205087], [47935.726291967, 47935.726291967, 47935.738268166], [47935.742812791, 47935.742812791, 47935.768645938], [47935.759332103, 47935.759332103, 47935.78023917], [47935.775852179, 47935.775852179, 47935.790301479], [47935.792370088, 47935.792370088, 47935.808716634], [47935.808886534, 47935.808886534, 47935.828469944], [47935.825405549, 47935.825405549, 47935.847505177], [47935.841924171, 47935.841924171, 47935.858679486], [47935.858443934, 47935.858443934, 47935.874853026], [47935.874964033, 47935.874964033, 47935.890258873], [47935.891483683, 47935.891483683, 47935.906516798], [47935.908003463, 47935.908003463, 47935.923744954], [47935.924524273, 47935.924524273, 47935.940697494], [47935.941045429, 47935.941045429, 47935.951244264], [47935.957565668, 47935.957565668, 47935.972625574], [47935.974086192, 47935.974086192, 47935.990240883], [47935.990606528, 47935.990606528, 47936.004224192], [47936.007126885, 47936.007126885, 47936.025908733], [47936.023645482, 47936.023645482, 47936.055407967], [47936.056686364, 47936.056686364, 47936.074787507], [47936.073207151, 47936.073207151, 47936.085496124], [47936.089728963, 47936.089728963, 47936.110800895], [47936.106248714, 47936.106248714, 47936.130998513], [47936.122768192, 47936.122768192, 47936.147646899], [47936.139288481, 47936.139288481, 47936.159323054], [47936.155809435, 47936.155809435, 47936.168079978], [47936.172329751, 47936.172329751, 47936.199411366], [47936.188849898, 47936.188849898, 47936.209066213], [47936.205368375, 47936.205368375, 47936.216412906], [47936.221888525, 47936.221888525, 47936.231361907], [47936.238409042, 47936.238409042, 47936.247891063], [47936.254929981, 47936.254929981, 47936.268238219], [47936.271451253, 47936.271451253, 47936.279999066], [47936.287972472, 47936.287972472, 47936.297630452], [47936.304493782, 47936.304493782, 47936.319113839], [47936.321014844, 47936.321014844, 47936.344128765], [47936.337535797, 47936.337535797, 47936.351287689], [47936.354056943, 47936.354056943, 47936.367194844], [47936.370578017, 47936.370578017, 47936.382908384], [47936.387096808, 47936.387096808, 47936.401040386], [47936.403616675, 47936.403616675, 47936.417343772], [47936.420137468, 47936.420137468, 47936.43099685], [47936.43665858, 47936.43665858, 47936.453590622], [47936.4531796, 47936.4531796, 47936.478642548], [47936.469699964, 47936.469699964, 47936.487780395], [47936.486220334, 47936.486220334, 47936.507798166], [47936.502741591, 47936.502741591, 47936.533974168], [47936.51926264, 47936.51926264, 47936.541256785], [47936.535783783, 47936.535783783, 47936.546948785], [47936.552305513, 47936.552305513, 47936.56486471], [47936.568826578, 47936.568826578, 47936.580425788], [47936.585346947, 47936.585346947, 47936.601266252], [47936.601868093, 47936.601868093, 47936.612860869], [47936.618387795, 47936.717250869, 47936.741309189], [47936.734036368, 47936.734036368, 47936.760933576], [47936.750557586, 47936.750557586, 47936.779709732], [47936.76707867, 47936.76707867, 47936.793537348], [47936.78359973, 47936.78359973, 47936.809900888], [47936.800120938, 47936.800120938, 47936.821443813], [47936.816642031, 47936.816642031, 47936.841556968], [47936.833162365, 47936.833162365, 47936.849165123], [47936.849683081, 47936.849683081, 47936.867662433], [47936.86620444, 47936.86620444, 47936.879782126], [47936.88272592, 47936.88272592, 47936.90067359], [47936.89924727, 47936.89924727, 47936.910647129], [47936.915767746, 47936.915767746, 47936.940919901], [47936.93228844, 47936.93228844, 47936.949553672], [47936.948809192, 47936.948809192, 47936.96740752], [47936.965329806, 47936.965329806, 47936.980368444], [47936.981850795, 47936.981850795, 47937.009727908], [47936.998369757, 47936.998369757, 47937.019498217], [47937.014889605, 47937.014889605, 47937.02781591], [47937.031410541, 47937.031410541, 47937.044315296], [47937.047931731, 47937.047931731, 47937.063101837], [47937.064453009, 47937.064453009, 47937.076084607], [47937.080974469, 47937.080974469, 47937.09077084], [47937.097495727, 47937.097495727, 47937.107639457], [47937.114016502, 47937.114016502, 47937.126400459], [47937.130536645, 47937.130536645, 47937.141217845], [47937.14705736, 47937.14705736, 47937.157548462], [47937.163578339, 47937.163578339, 47937.174061233], [47937.180098574, 47937.180098574, 47937.189905234], [47937.196619101, 47937.196619101, 47937.210141698], [47937.213140213, 47937.213140213, 47937.224252161], [47937.229661403, 47937.229661403, 47937.240894547]]
+[2021-01-16 13:18:17,846]DEBUG:mobileperf:fps:FPS:57 Jank:0
+[2021-01-16 13:18:17,966]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -l /data/local/tmp time consume: 0.33899950981140137
+[2021-01-16 13:18:17,966]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell rm /data/local/tmp/com.deskmateones_dumpheap_2021_01_16_07_32_41.hprof
+[2021-01-16 13:18:17,973]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task time consume: 0.29799842834472656
+[2021-01-16 13:18:17,973]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774297.973778
+[2021-01-16 13:18:17,973]DEBUG:mobileperf:thread_num:[1610774297.973778, 'com.deskmateones', 23439, 34]
+[2021-01-16 13:18:17,975]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-18-17, processname: com.deskmateones, pid: 23439 thread num: 34
+[2021-01-16 13:18:17,976]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 1.2819976806640625
+[2021-01-16 13:18:18,191]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell rm /data/local/tmp/com.deskmateones_dumpheap_2021_01_16_07_32_41.hprof time consume: 0.20399951934814453
+[2021-01-16 13:18:18,192]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell am dumpheap com.deskmateones /data/local/tmp/com.deskmateones_dumpheap_2021_01_16_13_18_18.hprof
+[2021-01-16 13:18:18,506]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -c  -b all time consume: 0.7240021228790283
+[2021-01-16 13:18:18,507]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
+[2021-01-16 13:18:18,527]DEBUG:mobileperf:androiddevice:logcat_thread_func
+[2021-01-16 13:18:18,587]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell am dumpheap com.deskmateones /data/local/tmp/com.deskmateones_dumpheap_2021_01_16_13_18_18.hprof time consume: 0.3750011920928955
+[2021-01-16 13:18:20,852]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:18:20,852]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:18:21,181]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:18:21,181]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:18:21,336]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.13500118255615234
+[2021-01-16 13:18:21,336]DEBUG:mobileperf:trafficstats: total uid  bytes : 4675364198
+[2021-01-16 13:18:21,337]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 0 uid pcket byte: 0
+[2021-01-16 13:18:21,337]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774301.3377788
+[2021-01-16 13:18:21,338]DEBUG:mobileperf:trafficstats:[1610774301.3377788, 'com.deskmateones', '10063', 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0.0, 0.0]
+[2021-01-16 13:18:21,339]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.15800023078918457
+[2021-01-16 13:18:21,587]DEBUG:mobileperf:cpu_top:8.0 or higher, user_rate: 100, sys: 145,device cpu: 245
+[2021-01-16 13:18:21,587]DEBUG:mobileperf:cpu_top:idle_rate: 153
+[2021-01-16 13:18:21,588]DEBUG:mobileperf:cpu_top:cpuinfos, _parse top target_pck is : com.deskmateones , self.pacakgename : com.deskmateones
+[2021-01-16 13:18:21,588]DEBUG:mobileperf:cpu_top:cpuinfos, into _parse_pck packege is target package, pid is :23439
+[2021-01-16 13:18:21,588]DEBUG:mobileperf:cpu_top:=========== item == col_name: CPU] index : 8
+[2021-01-16 13:18:21,589]DEBUG:mobileperf:cpu_top:package: com.deskmateones, cpu_rate: 102
+[2021-01-16 13:18:21,589]DEBUG:mobileperf:cpu_top:{'package': 'com.deskmateones', 'pid': '23439', 'pid_cpu': '102', 'uid': 'u0_a63'}
+[2021-01-16 13:18:21,589]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 0.7369990348815918
+[2021-01-16 13:18:21,590]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor save cpu_device_list: ['2021-01-16 13-18-21', '245', '100', '145', '153', 'com.deskmateones', '23439', '102']
+[2021-01-16 13:18:21,692]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.MainActivity1
+[2021-01-16 13:18:21,699]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:18:21,699]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:18:21,875]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.MainActivity1 time consume: 0.16300129890441895
+[2021-01-16 13:18:21,876]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:22,131]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.412001371383667
+[2021-01-16 13:18:22,132]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task
+[2021-01-16 13:18:22,326]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task time consume: 0.17199993133544922
+[2021-01-16 13:18:22,326]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774302.3267775
+[2021-01-16 13:18:22,327]DEBUG:mobileperf:thread_num:[1610774302.3267775, 'com.deskmateones', 23439, 34]
+[2021-01-16 13:18:22,327]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-18-22, processname: com.deskmateones, pid: 23439 thread num: 34
+[2021-01-16 13:18:22,328]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 0.6290018558502197
+[2021-01-16 13:18:23,757]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 1.8620004653930664
+[2021-01-16 13:18:23,758]DEBUG:mobileperf:fps:[[0, 47937.229661403, 0], [47937.246182581, 47937.246182581, 47937.26800578], [47937.262703812, 47937.262703812, 47937.274916704], [47937.279224675, 47937.279224675, 47937.290960321], [47937.29574505, 47937.29574505, 47937.30742963], [47937.312264822, 47937.312264822, 47937.32477594], [47937.328785316, 47937.328785316, 47937.346453942], [47937.345306138, 47937.345306138, 47937.358152174], [47937.361827503, 47937.361827503, 47937.376241868], [47937.378347539, 47937.378347539, 47937.404057717], [47937.394867926, 47937.394867926, 47937.414624026], [47937.411388385, 47937.411388385, 47937.424328873], [47937.427909781, 47937.427909781, 47937.439120567], [47937.444431118, 47937.444431118, 47937.467480646], [47937.460951964, 47937.460951964, 47937.476066724], [47937.477473201, 47937.477473201, 47937.489975956], [47937.493995087, 47937.493995087, 47937.505749496], [47937.510515939, 47937.510515939, 47937.52350996], [47937.527036676, 47937.527036676, 47937.543449423], [47937.543557213, 47937.543557213, 47937.554984501], [47937.560078056, 47937.560078056, 47937.572653811], [47937.576598248, 47937.576598248, 47937.599769506], [47937.59311813, 47937.59311813, 47937.606333276], [47937.609638052, 47937.609638052, 47937.623931662], [47937.626158963, 47937.626158963, 47937.640300818], [47937.642679101, 47937.642679101, 47937.655721435], [47937.659198758, 47937.659198758, 47937.672442359], [47937.675718262, 47937.675718262, 47937.686573899], [47937.692239131, 47937.692239131, 47937.702495285], [47937.708759428, 47937.708759428, 47937.734565981], [47937.725279684, 47937.725279684, 47937.74388029], [47937.741800816, 47937.741800816, 47937.760997599], [47937.758319782, 47937.758319782, 47937.770148215], [47937.774839986, 47937.774839986, 47937.786443678], [47937.791360371, 47937.791360371, 47937.803149526], [47937.807881304, 47937.807881304, 47937.82354699], [47937.824402528, 47937.824402528, 47937.837586453], [47937.84092417, 47937.84092417, 47937.853244916], [47937.857445146, 47937.857445146, 47937.871697225], [47937.873965936, 47937.873965936, 47937.88794615], [47937.890487156, 47937.890487156, 47937.903711536], [47937.907008369, 47937.907008369, 47937.919674769], [47937.923529287, 47937.923529287, 47937.941077232], [47937.940050335, 47937.940050335, 47937.953730695], [47937.956571125, 47937.956571125, 47937.968796466], [47937.973092161, 47937.973092161, 47937.985060314], [47937.989613068, 47937.989613068, 47938.004560393], [47938.006134708, 47938.006134708, 47938.017007855]]
+[2021-01-16 13:18:23,760]DEBUG:mobileperf:fps:FPS:61 Jank:0
+[2021-01-16 13:18:24,860]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:23.653   573   597 I am_activity_launch_time: [0,179160686,com.deskmateones/.ui.activity.home.CourseActivity,980,980]
+[2021-01-16 13:18:24,861]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-18-24', 'com.deskmateones/.ui.activity.home.CourseActivity', '980', '980', 'normal launch']
+[2021-01-16 13:18:24,862]DEBUG:mobileperf:logcat:save launchtime data to csv: [('datetime', 'packagenme/activity', 'this_time(s)', 'total_time(s)', 'launchtype'), ['2021-01-16 13-18-24', 'com.deskmateones/.ui.activity.home.CourseActivity', 0.98, 0.98, 'normal launch']]
+[2021-01-16 13:18:25,855]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:18:25,855]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:18:26,182]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:18:26,182]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:18:26,331]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.12900066375732422
+[2021-01-16 13:18:26,331]DEBUG:mobileperf:trafficstats: total uid  bytes : 4675371795
+[2021-01-16 13:18:26,332]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 7597 uid pcket byte: 25
+[2021-01-16 13:18:26,332]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774306.332778
+[2021-01-16 13:18:26,333]DEBUG:mobileperf:trafficstats:[1610774306.332778, 'com.deskmateones', '10063', 7.42, 25, 5.92, 12, 1.5, 13, 7.42, 0.0, 0.0]
+[2021-01-16 13:18:26,334]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.15199041366577148
+[2021-01-16 13:18:26,580]DEBUG:mobileperf:cpu_top:8.0 or higher, user_rate: 97, sys: 58,device cpu: 155
+[2021-01-16 13:18:26,580]DEBUG:mobileperf:cpu_top:idle_rate: 245
+[2021-01-16 13:18:26,581]DEBUG:mobileperf:cpu_top:cpuinfos, _parse top target_pck is : com.deskmateones , self.pacakgename : com.deskmateones
+[2021-01-16 13:18:26,582]DEBUG:mobileperf:cpu_top:cpuinfos, into _parse_pck packege is target package, pid is :23439
+[2021-01-16 13:18:26,582]DEBUG:mobileperf:cpu_top:=========== item == col_name: CPU] index : 8
+[2021-01-16 13:18:26,583]DEBUG:mobileperf:cpu_top:package: com.deskmateones, cpu_rate: 0.0
+[2021-01-16 13:18:26,583]DEBUG:mobileperf:cpu_top:{'package': 'com.deskmateones', 'pid': '23439', 'pid_cpu': '0.0', 'uid': 'u0_a63'}
+[2021-01-16 13:18:26,584]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 0.7289998531341553
+[2021-01-16 13:18:26,584]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor save cpu_device_list: ['2021-01-16 13-18-26', '155', '97', '58', '245', 'com.deskmateones', '23439', '0.0']
+[2021-01-16 13:18:26,694]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.MainActivity1
+[2021-01-16 13:18:26,700]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:18:26,700]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:18:26,868]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.MainActivity1 time consume: 0.1530001163482666
+[2021-01-16 13:18:26,869]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:27,115]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.3939993381500244
+[2021-01-16 13:18:27,116]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task
+[2021-01-16 13:18:27,132]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.2409992218017578
+[2021-01-16 13:18:27,132]DEBUG:mobileperf:fps:[[0, 47938.006134708, 0], [47938.022656113, 47943.196490319, 47943.215365837], [47943.210961752, 47943.276870468, 47943.294582999], [47943.292270195, 47943.325224553, 47943.344328235], [47943.887263277, 47944.200329678, 47944.285722021], [47944.21771344, 47944.300099335, 47944.361731106]]
+[2021-01-16 13:18:27,280]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task time consume: 0.14300084114074707
+[2021-01-16 13:18:27,281]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774307.281777
+[2021-01-16 13:18:27,281]DEBUG:mobileperf:thread_num:[1610774307.281777, 'com.deskmateones', 23439, 37]
+[2021-01-16 13:18:27,282]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-18-27, processname: com.deskmateones, pid: 23439 thread num: 37
+[2021-01-16 13:18:27,283]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 0.5829999446868896
+[2021-01-16 13:18:27,820]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell input keyevent 25
+[2021-01-16 13:18:28,589]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E pull /data/local/tmp/com.deskmateones_dumpheap_2021_01_16_13_18_18.hprof ./mobileperf_output\com.deskmateones\2021_01_16_13_18_15
+[2021-01-16 13:18:28,761]DEBUG:mobileperf:fps:FPS: 1 Jank:2
+[2021-01-16 13:18:29,931]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell input keyevent 25 time consume: 2.0900001525878906
+[2021-01-16 13:18:30,239]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E pull /data/local/tmp/com.deskmateones_dumpheap_2021_01_16_13_18_18.hprof ./mobileperf_output\com.deskmateones\2021_01_16_13_18_15 time consume: 1.6290035247802734
+[2021-01-16 13:18:30,239]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo
+[2021-01-16 13:18:30,858]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:18:30,858]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:18:31,184]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:18:31,184]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:18:31,399]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.19500041007995605
+[2021-01-16 13:18:31,400]DEBUG:mobileperf:trafficstats: total uid  bytes : 4675373156
+[2021-01-16 13:18:31,401]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 8958 uid pcket byte: 29
+[2021-01-16 13:18:31,401]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774311.4017777
+[2021-01-16 13:18:31,402]DEBUG:mobileperf:trafficstats:[1610774311.4017777, 'com.deskmateones', '10063', 8.75, 29, 6.51, 14, 2.24, 15, 8.75, 0.0, 0.0]
+[2021-01-16 13:18:31,403]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.21900010108947754
+[2021-01-16 13:18:31,688]DEBUG:mobileperf:cpu_top:8.0 or higher, user_rate: 264, sys: 121,device cpu: 385
+[2021-01-16 13:18:31,688]DEBUG:mobileperf:cpu_top:idle_rate: 15
+[2021-01-16 13:18:31,689]DEBUG:mobileperf:cpu_top:cpuinfos, _parse top target_pck is : com.deskmateones , self.pacakgename : com.deskmateones
+[2021-01-16 13:18:31,689]DEBUG:mobileperf:cpu_top:cpuinfos, into _parse_pck packege is target package, pid is :23439
+[2021-01-16 13:18:31,690]DEBUG:mobileperf:cpu_top:=========== item == col_name: CPU] index : 8
+[2021-01-16 13:18:31,690]DEBUG:mobileperf:cpu_top:package: com.deskmateones, cpu_rate: 0.0
+[2021-01-16 13:18:31,690]DEBUG:mobileperf:cpu_top:{'package': 'com.deskmateones', 'pid': '23439', 'pid_cpu': '0.0', 'uid': 'u0_a63'}
+[2021-01-16 13:18:31,691]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 0.8329906463623047
+[2021-01-16 13:18:31,691]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor save cpu_device_list: ['2021-01-16 13-18-31', '385', '264', '121', '15', 'com.deskmateones', '23439', '0.0']
+[2021-01-16 13:18:31,696]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.MainActivity1
+[2021-01-16 13:18:31,702]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:18:31,702]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:18:31,864]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.MainActivity1 time consume: 0.14800000190734863
+[2021-01-16 13:18:31,864]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:32,130]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.4070000648498535
+[2021-01-16 13:18:32,131]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task
+[2021-01-16 13:18:32,144]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.25999975204467773
+[2021-01-16 13:18:32,145]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys window windows
+[2021-01-16 13:18:32,299]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task time consume: 0.14499950408935547
+[2021-01-16 13:18:32,299]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774312.2997775
+[2021-01-16 13:18:32,300]DEBUG:mobileperf:thread_num:[1610774312.2997775, 'com.deskmateones', 23439, 37]
+[2021-01-16 13:18:32,300]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-18-32, processname: com.deskmateones, pid: 23439 thread num: 37
+[2021-01-16 13:18:32,301]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 0.5989999771118164
+[2021-01-16 13:18:32,373]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys window windows time consume: 0.20699763298034668
+[2021-01-16 13:18:32,373]DEBUG:mobileperf:androiddevice:dumpsys window windows命令activity_line_split结果: ['mCurrentFocus=Window{e0fcf2b', 'u0', 'com.deskmateones/com.deskmateones.ui.activity.home.CourseActivity}']
+[2021-01-16 13:18:32,374]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.home.CourseActivity
+[2021-01-16 13:18:32,544]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.home.CourseActivity time consume: 0.15000081062316895
+[2021-01-16 13:18:32,544]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:32,783]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.21700072288513184
+[2021-01-16 13:18:32,783]DEBUG:mobileperf:fps:[[47944.482068591, 47944.482068591, 47945.122199259], [47945.043834997, 47945.126220892, 47945.165103494], [47948.302425957, 47948.302425957, 47948.33903535], [47948.380689959, 47948.413644317, 47948.511229828], [47948.496501742, 47948.496501742, 47948.523128676], [47948.826905422, 47948.826905422, 47948.946407949], [47948.926026184, 47948.926026184, 47948.962247027], [47950.329125695, 47950.329125695, 47950.355540628], [47951.371134487, 47951.371134487, 47951.396009194]]
+[2021-01-16 13:18:33,762]DEBUG:mobileperf:fps:FPS: 1 Jank:5
+[2021-01-16 13:18:35,861]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:18:35,861]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:18:35,952]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo time consume: 5.690998554229736
+[2021-01-16 13:18:35,953]DEBUG:mobileperf:meminfos:dumpsys meminfo time consume:5.7139997482299805
+[2021-01-16 13:18:35,953]DEBUG:mobileperf:meminfos: device general mem，total mem: 979.16, 
+ used mem: 653.36, free mem: 323.8
+[2021-01-16 13:18:35,953]DEBUG:mobileperf:meminfos:{'package': 'com.deskmateones', 'pid': '23439', 'pss': '53.53'}
+[2021-01-16 13:18:35,954]DEBUG:mobileperf:meminfos:current time: 2021-01-16 13-18-35, processname: ,total pss:53.53
+[2021-01-16 13:18:35,954]DEBUG:mobileperf:meminfos:collection time in meminfo is : 2021-01-16 13-18-35
+[2021-01-16 13:18:35,956]DEBUG:mobileperf:meminfos:write to file:./mobileperf_output\com.deskmateones\2021_01_16_13_18_15\pid_change.csv
+[2021-01-16 13:18:35,956]DEBUG:mobileperf:meminfos:['2021-01-16 13-18-16', 'com.deskmateones', '23439']
+[2021-01-16 13:18:35,957]DEBUG:mobileperf:meminfos:write to file:./mobileperf_output\com.deskmateones\2021_01_16_13_18_15\meminfo.csv
+[2021-01-16 13:18:35,957]DEBUG:mobileperf:meminfos:['2021-01-16 13-18-16', 979.16, 323.8, 'com.deskmateones', '23439', '53.53']
+[2021-01-16 13:18:35,958]INFO:mobileperf:meminfos:time consume for meminfos: 19.608999967575073
+[2021-01-16 13:18:35,958]DEBUG:mobileperf:meminfos:-----------into _collect_mem_thread loop, thread is : Thread-24
+[2021-01-16 13:18:35,959]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones
+[2021-01-16 13:18:36,185]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:18:36,185]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:18:36,344]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.13899922370910645
+[2021-01-16 13:18:36,344]DEBUG:mobileperf:trafficstats: total uid  bytes : 4675373156
+[2021-01-16 13:18:36,345]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 8958 uid pcket byte: 29
+[2021-01-16 13:18:36,345]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774316.345777
+[2021-01-16 13:18:36,346]DEBUG:mobileperf:trafficstats:[1610774316.345777, 'com.deskmateones', '10063', 8.75, 29, 6.51, 14, 2.24, 15, 8.75, 0.0, 0.0]
+[2021-01-16 13:18:36,346]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.16100025177001953
+[2021-01-16 13:18:36,577]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones time consume: 0.5970003604888916
+[2021-01-16 13:18:36,578]DEBUG:mobileperf:meminfos:dumpsys meminfo package time consume:0.6189999580383301
+[2021-01-16 13:18:36,578]INFO:mobileperf:meminfos:time consume for meminfos: 0.6200001239776611
+[2021-01-16 13:18:36,622]DEBUG:mobileperf:cpu_top:8.0 or higher, user_rate: 166, sys: 79,device cpu: 245
+[2021-01-16 13:18:36,623]DEBUG:mobileperf:cpu_top:idle_rate: 147
+[2021-01-16 13:18:36,623]DEBUG:mobileperf:cpu_top:cpuinfos, _parse top target_pck is : com.deskmateones , self.pacakgename : com.deskmateones
+[2021-01-16 13:18:36,623]DEBUG:mobileperf:cpu_top:cpuinfos, into _parse_pck packege is target package, pid is :23439
+[2021-01-16 13:18:36,623]DEBUG:mobileperf:cpu_top:=========== item == col_name: CPU] index : 8
+[2021-01-16 13:18:36,623]DEBUG:mobileperf:cpu_top:package: com.deskmateones, cpu_rate: 55.2
+[2021-01-16 13:18:36,623]DEBUG:mobileperf:cpu_top:{'package': 'com.deskmateones', 'pid': '23439', 'pid_cpu': '55.2', 'uid': 'u0_a63'}
+[2021-01-16 13:18:36,624]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 0.7629921436309814
+[2021-01-16 13:18:36,624]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor save cpu_device_list: ['2021-01-16 13-18-36', '245', '166', '79', '147', 'com.deskmateones', '23439', '55.2']
+[2021-01-16 13:18:36,704]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:18:36,704]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:18:37,091]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.3670005798339844
+[2021-01-16 13:18:37,092]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task
+[2021-01-16 13:18:37,312]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task time consume: 0.1979997158050537
+[2021-01-16 13:18:37,315]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774317.3157783
+[2021-01-16 13:18:37,315]DEBUG:mobileperf:thread_num:[1610774317.3157783, 'com.deskmateones', 23439, 36]
+[2021-01-16 13:18:37,315]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-18-37, processname: com.deskmateones, pid: 23439 thread num: 36
+[2021-01-16 13:18:37,316]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 0.6120004653930664
+[2021-01-16 13:18:37,376]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.home.CourseActivity
+[2021-01-16 13:18:37,624]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.home.CourseActivity time consume: 0.22700095176696777
+[2021-01-16 13:18:37,624]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:37,830]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.18700027465820312
+[2021-01-16 13:18:37,831]DEBUG:mobileperf:fps:[[0, 47951.371134487, 0], [47956.442164431, 47956.442164431, 47956.456891931], [47956.525437861, 47956.54191504, 47956.614279485], [47956.839492205, 47956.839492205, 47956.927138132], [47956.905572093, 47956.905572093, 47956.946336134]]
+[2021-01-16 13:18:38,764]DEBUG:mobileperf:fps:FPS: 1 Jank:2
+[2021-01-16 13:18:40,864]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:18:40,864]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:18:40,959]DEBUG:mobileperf:meminfos:-----------into _collect_mem_thread loop, thread is : Thread-24
+[2021-01-16 13:18:40,959]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones
+[2021-01-16 13:18:41,187]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:18:41,187]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:18:41,342]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.1359999179840088
+[2021-01-16 13:18:41,342]DEBUG:mobileperf:trafficstats: total uid  bytes : 4675374428
+[2021-01-16 13:18:41,343]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 10230 uid pcket byte: 33
+[2021-01-16 13:18:41,343]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774321.343778
+[2021-01-16 13:18:41,343]DEBUG:mobileperf:trafficstats:[1610774321.343778, 'com.deskmateones', '10063', 9.99, 33, 7.0, 16, 2.99, 17, 9.99, 0.0, 0.0]
+[2021-01-16 13:18:41,343]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.15600037574768066
+[2021-01-16 13:18:41,678]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones time consume: 0.6999998092651367
+[2021-01-16 13:18:41,680]DEBUG:mobileperf:meminfos:dumpsys meminfo package time consume:0.7210021018981934
+[2021-01-16 13:18:41,681]INFO:mobileperf:meminfos:time consume for meminfos: 0.7219996452331543
+[2021-01-16 13:18:41,705]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:18:41,705]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:18:41,712]DEBUG:mobileperf:cpu_top:8.0 or higher, user_rate: 140, sys: 85,device cpu: 225
+[2021-01-16 13:18:41,735]DEBUG:mobileperf:cpu_top:idle_rate: 170
+[2021-01-16 13:18:41,739]DEBUG:mobileperf:cpu_top:cpuinfos, _parse top target_pck is : com.deskmateones , self.pacakgename : com.deskmateones
+[2021-01-16 13:18:41,740]DEBUG:mobileperf:cpu_top:cpuinfos, into _parse_pck packege is target package, pid is :23439
+[2021-01-16 13:18:41,740]DEBUG:mobileperf:cpu_top:=========== item == col_name: CPU] index : 8
+[2021-01-16 13:18:41,740]DEBUG:mobileperf:cpu_top:package: com.deskmateones, cpu_rate: 38.2
+[2021-01-16 13:18:41,740]DEBUG:mobileperf:cpu_top:{'package': 'com.deskmateones', 'pid': '23439', 'pid_cpu': '38.2', 'uid': 'u0_a63'}
+[2021-01-16 13:18:41,740]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 0.8759922981262207
+[2021-01-16 13:18:41,741]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor save cpu_device_list: ['2021-01-16 13-18-41', '225', '140', '85', '170', 'com.deskmateones', '23439', '38.2']
+[2021-01-16 13:18:42,116]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.3840000629425049
+[2021-01-16 13:18:42,116]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task
+[2021-01-16 13:18:42,274]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task time consume: 0.1380000114440918
+[2021-01-16 13:18:42,274]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774322.2747774
+[2021-01-16 13:18:42,275]DEBUG:mobileperf:thread_num:[1610774322.2747774, 'com.deskmateones', 23439, 36]
+[2021-01-16 13:18:42,275]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-18-42, processname: com.deskmateones, pid: 23439 thread num: 36
+[2021-01-16 13:18:42,275]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 0.569998025894165
+[2021-01-16 13:18:42,377]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.home.CourseActivity
+[2021-01-16 13:18:42,542]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.home.CourseActivity time consume: 0.14600062370300293
+[2021-01-16 13:18:42,542]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:42,745]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.18400025367736816
+[2021-01-16 13:18:42,746]DEBUG:mobileperf:fps:[[0, 47956.905572093, 0], [47957.450726865, 47957.450726865, 47957.466087801], [47958.468851315, 47958.468851315, 47958.487540827], [47959.4904373, 47959.4904373, 47959.502645697], [47960.512022658, 47960.512022658, 47960.543219648], [47960.523640074, 47960.523640074, 47960.563344804], [47960.540114524, 47960.540114524, 47960.579903421], [47960.556589491, 47960.556589491, 47960.589582268], [47960.573061982, 47960.573061982, 47960.601245269], [47960.589535974, 47960.589535974, 47960.619484578], [47960.606222873, 47960.606222873, 47960.635700657], [47960.622741887, 47960.622741887, 47960.649817889], [47960.639260784, 47960.639260784, 47960.670217122]]
+[2021-01-16 13:18:43,765]DEBUG:mobileperf:fps:FPS: 3 Jank:4
+[2021-01-16 13:18:45,635]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:44.436   573   597 I am_activity_launch_time: [0,184619982,com.deskmateones/.ui.activity.live.LiveHomeNewTwoActivity,1256,1256]
+[2021-01-16 13:18:45,635]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-18-45', 'com.deskmateones/.ui.activity.live.LiveHomeNewTwoActivity', '1256', '1256', 'normal launch']
+[2021-01-16 13:18:45,636]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-18-45', 'com.deskmateones/.ui.activity.live.LiveHomeNewTwoActivity', 1.26, 1.26, 'normal launch']]
+[2021-01-16 13:18:45,867]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:18:45,867]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:18:45,969]DEBUG:mobileperf:meminfos:-----------into _collect_mem_thread loop, thread is : Thread-24
+[2021-01-16 13:18:45,969]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones
+[2021-01-16 13:18:46,189]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:18:46,189]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:18:46,640]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.43000221252441406
+[2021-01-16 13:18:46,640]DEBUG:mobileperf:trafficstats: total uid  bytes : 4675414835
+[2021-01-16 13:18:46,640]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 50637 uid pcket byte: 117
+[2021-01-16 13:18:46,640]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774326.6407793
+[2021-01-16 13:18:46,640]DEBUG:mobileperf:trafficstats:[1610774326.6407793, 'com.deskmateones', '10063', 49.45, 117, 41.57, 58, 7.88, 59, 49.45, 0.0, 0.0]
+[2021-01-16 13:18:46,641]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.45200061798095703
+[2021-01-16 13:18:46,707]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:18:46,707]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:18:47,107]DEBUG:mobileperf:cpu_top:8.0 or higher, user_rate: 147, sys: 77,device cpu: 224
+[2021-01-16 13:18:47,108]DEBUG:mobileperf:cpu_top:idle_rate: 169
+[2021-01-16 13:18:47,108]DEBUG:mobileperf:cpu_top:cpuinfos, _parse top target_pck is : com.deskmateones , self.pacakgename : com.deskmateones
+[2021-01-16 13:18:47,108]DEBUG:mobileperf:cpu_top:cpuinfos, into _parse_pck packege is target package, pid is :23439
+[2021-01-16 13:18:47,109]DEBUG:mobileperf:cpu_top:=========== item == col_name: CPU] index : 8
+[2021-01-16 13:18:47,109]DEBUG:mobileperf:cpu_top:package: com.deskmateones, cpu_rate: 67.5
+[2021-01-16 13:18:47,109]DEBUG:mobileperf:cpu_top:{'package': 'com.deskmateones', 'pid': '23439', 'pid_cpu': '67.5', 'uid': 'u0_a63'}
+[2021-01-16 13:18:47,110]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 1.2429931163787842
+[2021-01-16 13:18:47,110]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor save cpu_device_list: ['2021-01-16 13-18-47', '224', '147', '77', '169', 'com.deskmateones', '23439', '67.5']
+[2021-01-16 13:18:47,242]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.5140001773834229
+[2021-01-16 13:18:47,243]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task
+[2021-01-16 13:18:47,325]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones time consume: 1.3359994888305664
+[2021-01-16 13:18:47,326]DEBUG:mobileperf:meminfos:dumpsys meminfo package time consume:1.357001781463623
+[2021-01-16 13:18:47,326]INFO:mobileperf:meminfos:time consume for meminfos: 1.357001781463623
+[2021-01-16 13:18:47,379]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.home.CourseActivity
+[2021-01-16 13:18:47,485]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task time consume: 0.22100019454956055
+[2021-01-16 13:18:47,486]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774327.4867768
+[2021-01-16 13:18:47,486]DEBUG:mobileperf:thread_num:[1610774327.4867768, 'com.deskmateones', 23439, 37]
+[2021-01-16 13:18:47,486]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-18-47, processname: com.deskmateones, pid: 23439 thread num: 37
+[2021-01-16 13:18:47,487]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 0.7800004482269287
+[2021-01-16 13:18:47,661]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.home.CourseActivity time consume: 0.25999951362609863
+[2021-01-16 13:18:47,661]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:48,028]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.34799885749816895
+[2021-01-16 13:18:48,029]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys window windows
+[2021-01-16 13:18:48,323]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys window windows time consume: 0.2740004062652588
+[2021-01-16 13:18:48,324]DEBUG:mobileperf:androiddevice:dumpsys window windows命令activity_line_split结果: ['mCurrentFocus=null']
+[2021-01-16 13:18:48,324]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency 
+[2021-01-16 13:18:48,524]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency  time consume: 0.18000006675720215
+[2021-01-16 13:18:48,526]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:48,955]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.40400099754333496
+[2021-01-16 13:18:48,955]DEBUG:mobileperf:fps:[[47962.671348261, 47963.3469126, 47963.439044322], [47963.365395084, 47963.464258158, 47963.510275791], [47963.53063579, 47963.629498864, 47963.6758475], [47963.662832352, 47963.778172605, 47963.813623513], [47963.795034215, 47963.827988573, 47963.860105441], [47964.934688191, 47965.033551265, 47965.124954799], [47965.050341958, 47965.659997581, 47965.834037254]]
+[2021-01-16 13:18:48,956]DEBUG:mobileperf:fps:FPS: 3 Jank:2
+[2021-01-16 13:18:49,169]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:47.970   573   597 I am_activity_launch_time: [0,254738683,com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity,1659,1659]
+[2021-01-16 13:18:49,170]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-18-49', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', '1659', '1659', 'normal launch']
+[2021-01-16 13:18:49,171]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-18-49', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', 1.66, 1.66, 'normal launch']]
+[2021-01-16 13:18:50,870]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:18:50,870]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:18:50,970]DEBUG:mobileperf:meminfos:-----------into _collect_mem_thread loop, thread is : Thread-24
+[2021-01-16 13:18:50,970]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones
+[2021-01-16 13:18:51,190]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:18:51,190]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:18:51,439]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.22900080680847168
+[2021-01-16 13:18:51,439]DEBUG:mobileperf:trafficstats: total uid  bytes : 4675471543
+[2021-01-16 13:18:51,440]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 107345 uid pcket byte: 211
+[2021-01-16 13:18:51,440]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774331.4407778
+[2021-01-16 13:18:51,441]DEBUG:mobileperf:trafficstats:[1610774331.4407778, 'com.deskmateones', '10063', 104.83, 211, 93.79, 106, 11.04, 105, 104.83, 0.0, 0.0]
+[2021-01-16 13:18:51,442]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.25199246406555176
+[2021-01-16 13:18:51,708]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:18:51,708]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:18:51,798]DEBUG:mobileperf:cpu_top:8.0 or higher, user_rate: 156, sys: 98,device cpu: 254
+[2021-01-16 13:18:51,799]DEBUG:mobileperf:cpu_top:idle_rate: 142
+[2021-01-16 13:18:51,800]DEBUG:mobileperf:cpu_top:cpuinfos, _parse top target_pck is : com.deskmateones , self.pacakgename : com.deskmateones
+[2021-01-16 13:18:51,800]DEBUG:mobileperf:cpu_top:cpuinfos, into _parse_pck packege is target package, pid is :23439
+[2021-01-16 13:18:51,801]DEBUG:mobileperf:cpu_top:=========== item == col_name: CPU] index : 8
+[2021-01-16 13:18:51,803]DEBUG:mobileperf:cpu_top:package: com.deskmateones, cpu_rate: 59.6
+[2021-01-16 13:18:51,803]DEBUG:mobileperf:cpu_top:{'package': 'com.deskmateones', 'pid': '23439', 'pid_cpu': '59.6', 'uid': 'u0_a63'}
+[2021-01-16 13:18:51,803]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 0.9330010414123535
+[2021-01-16 13:18:51,804]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor save cpu_device_list: ['2021-01-16 13-18-51', '254', '156', '98', '142', 'com.deskmateones', '23439', '59.6']
+[2021-01-16 13:18:51,823]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones time consume: 0.8320026397705078
+[2021-01-16 13:18:51,826]DEBUG:mobileperf:meminfos:dumpsys meminfo package time consume:0.8560006618499756
+[2021-01-16 13:18:51,827]INFO:mobileperf:meminfos:time consume for meminfos: 0.8569996356964111
+[2021-01-16 13:18:52,090]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.36100077629089355
+[2021-01-16 13:18:52,090]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task
+[2021-01-16 13:18:52,244]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task time consume: 0.13499999046325684
+[2021-01-16 13:18:52,244]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774332.2447777
+[2021-01-16 13:18:52,246]DEBUG:mobileperf:thread_num:[1610774332.2447777, 'com.deskmateones', 23439, 40]
+[2021-01-16 13:18:52,248]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-18-52, processname: com.deskmateones, pid: 23439 thread num: 40
+[2021-01-16 13:18:52,249]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 0.5409903526306152
+[2021-01-16 13:18:53,325]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency 
+[2021-01-16 13:18:53,559]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency  time consume: 0.21097946166992188
+[2021-01-16 13:18:53,559]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:53,827]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.2480003833770752
+[2021-01-16 13:18:53,827]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys window windows
+[2021-01-16 13:18:54,011]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys window windows time consume: 0.16300034523010254
+[2021-01-16 13:18:54,012]DEBUG:mobileperf:androiddevice:dumpsys window windows命令activity_line_split结果: ['mCurrentFocus=Window{8e05dad', 'u0', 'com.deskmateones/com.deskmateones.ui.activity.live.liveqiniu.LiveCourseDetailsActivity}']
+[2021-01-16 13:18:54,013]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.live.liveqiniu.LiveCourseDetailsActivity
+[2021-01-16 13:18:54,188]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.live.liveqiniu.LiveCourseDetailsActivity time consume: 0.15399980545043945
+[2021-01-16 13:18:54,189]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:54,434]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.22500061988830566
+[2021-01-16 13:18:54,435]DEBUG:mobileperf:fps:[[47968.205697176, 47968.452854861, 47968.581266606], [47968.470014386, 47968.601831818, 47968.630291226], [47969.262949326, 47969.295903684, 47969.360129145], [47969.312509134, 47969.345463492, 47969.383517917], [47969.362068314, 47969.362068314, 47969.402973073], [47969.378587968, 47969.378587968, 47969.419082767], [47969.395108558, 47969.395108558, 47969.431772383], [47969.411628158, 47969.411628158, 47969.447873154], [47969.428146108, 47969.428146108, 47969.461370617], [47969.808089477, 47969.808089477, 47969.81700096], [47969.824611006, 47969.824611006, 47969.836848347], [47969.84113119, 47969.84113119, 47969.853890426], [47969.857650645, 47969.857650645, 47969.870754812], [47969.87417126, 47969.87417126, 47969.885784275], [47969.89069218, 47969.89069218, 47969.903560431], [47969.907213128, 47969.907213128, 47969.918785201], [47969.923734013, 47969.923734013, 47969.936535895], [47969.940254947, 47969.940254947, 47969.951303666], [47969.956775714, 47969.956775714, 47969.967132437], [47969.973296542, 47969.973296542, 47969.984404823], [47969.989817463, 47969.989817463, 47970.002776594], [47970.006336931, 47970.006336931, 47970.017877903], [47970.022857111, 47970.022857111, 47970.034070444], [47970.039378103, 47970.039378103, 47970.055048292], [47970.055898554, 47970.055898554, 47970.071431601], [47970.072418451, 47970.072418451, 47970.08269291], [47970.336735994, 47970.336735994, 47970.351426168], [47970.353256771, 47970.353256771, 47970.40450025], [47970.402816289, 47970.402816289, 47970.417565405], [47970.419335476, 47970.419335476, 47970.435148561], [47970.435853655, 47970.435853655, 47970.448320562], [47970.452372051, 47970.452372051, 47970.469386333], [47970.468889366, 47970.468889366, 47970.484034566], [47970.485407755, 47970.485407755, 47970.499247798], [47970.501928255, 47970.501928255, 47970.514257953], [47970.518447019, 47970.518447019, 47970.538875956], [47970.551483851, 47970.551483851, 47970.565773189], [47970.568004421, 47970.568004421, 47970.581452114], [47970.601037962, 47970.601037962, 47970.626210426], [47970.617556273, 47970.617556273, 47970.638960966], [47970.766223673, 47970.766223673, 47970.781143672], [47970.782744032, 47970.782744032, 47970.796290212], [47970.79926463, 47970.79926463, 47970.815279137], [47970.815784998, 47970.815784998, 47970.827216061], [47970.832305422, 47970.832305422, 47970.846122756], [47970.848825822, 47970.848825822, 47970.866068604], [47970.8653448, 47970.8653448, 47970.880166221], [47970.881865105, 47970.881865105, 47970.890794145], [47970.898385947, 47970.898385947, 47970.912160685], [47970.914905289, 47970.914905289, 47970.929246072], [47970.931425436, 47970.931425436, 47970.941490073], [47970.94794646, 47970.94794646, 47970.96214346], [47970.964467257, 47970.964467257, 47970.976372769], [47970.980988219, 47970.980988219, 47970.992138924], [47970.997508815, 47970.997508815, 47971.006845387], [47971.01402979, 47971.01402979, 47971.022795619], [47971.030550666, 47971.030550666, 47971.040499467], [47972.408503766, 47972.408503766, 47972.425916606], [47972.418555249, 47972.418555249, 47972.436630069], [47972.435030221, 47972.435030221, 47972.462323379], [47972.451503413, 47972.451503413, 47972.478616919], [47972.467980549, 47972.467980549, 47972.487018304], [47972.484458004, 47972.484458004, 47972.499026306], [47972.501200256, 47972.501200256, 47972.517692846], [47972.517719648, 47972.517719648, 47972.536142232], [47972.534239653, 47972.534239653, 47972.548368541], [47972.550762187, 47972.550762187, 47972.563063389], [47972.567287383, 47972.567287383, 47972.578927852], [47972.583811596, 47972.583811596, 47972.597664623], [47972.600336156, 47972.600336156, 47972.61275524], [47972.616861236, 47972.616861236, 47972.62903478], [47972.633386068, 47972.633386068, 47972.644113397], [47972.649909017, 47972.649909017, 47972.664580861], [47972.666432944, 47972.666432944, 47972.67821817], [47972.682956481, 47972.682956481, 47972.691380171], [47972.699481666, 47972.699481666, 47972.708873019], [47972.716005606, 47972.716005606, 47972.727751328], [47972.732529786, 47972.732529786, 47972.745472561], [47972.749053929, 47972.749053929, 47972.757459178], [47972.765578239, 47972.765578239, 47972.77443841], [47972.782102781, 47972.782102781, 47972.794494489], [47972.798626875, 47972.798626875, 47972.808144798], [47972.81515134, 47972.81515134, 47972.823641723], [47972.831675541, 47972.831675541, 47972.841331494], [47972.848199389, 47972.848199389, 47972.862258188], [47972.864723607, 47972.864723607, 47972.879615651], [47972.88124816, 47972.88124816, 47972.89139596], [47972.897772855, 47972.897772855, 47972.907484116], [47972.914297193, 47972.914297193, 47972.932237349], [47972.930820696, 47972.930820696, 47972.945581504], [47972.947344519, 47972.947344519, 47972.962309198], [47972.963869369, 47972.963869369, 47972.974635584], [47972.980394291, 47972.980394291, 47972.999240433], [47972.996915991, 47972.996915991, 47973.012122203], [47973.01343829, 47973.01343829, 47973.025966435], [47973.029963106, 47973.029963106, 47973.041066514], [47973.046487984, 47973.046487984, 47973.060595516], [47973.063012566, 47973.063012566, 47973.072657209], [47973.07953745, 47973.07953745, 47973.089967211], [47973.096062383, 47973.096062383, 47973.109837828], [47973.112587002, 47973.112587002, 47973.126515291], [47973.129111337, 47973.129111337, 47973.14379837], [47973.145635333, 47973.145635333, 47973.158950602], [47973.162159587, 47973.162159587, 47973.172497142], [47973.178683274, 47973.178683274, 47973.187924913]]
+[2021-01-16 13:18:54,438]DEBUG:mobileperf:fps:FPS:22 Jank:4
+[2021-01-16 13:18:55,874]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:18:55,874]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:18:55,978]DEBUG:mobileperf:meminfos:-----------into _collect_mem_thread loop, thread is : Thread-24
+[2021-01-16 13:18:55,978]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones
+[2021-01-16 13:18:56,192]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:18:56,192]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:18:56,337]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.125
+[2021-01-16 13:18:56,338]DEBUG:mobileperf:trafficstats: total uid  bytes : 4675471738
+[2021-01-16 13:18:56,338]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 107540 uid pcket byte: 214
+[2021-01-16 13:18:56,340]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774336.3404229
+[2021-01-16 13:18:56,340]DEBUG:mobileperf:trafficstats:[1610774336.3404229, 'com.deskmateones', '10063', 105.02, 214, 93.91, 108, 11.11, 106, 105.02, 0.0, 0.0]
+[2021-01-16 13:18:56,341]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.14899373054504395
+[2021-01-16 13:18:56,577]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones time consume: 0.5790011882781982
+[2021-01-16 13:18:56,579]DEBUG:mobileperf:meminfos:dumpsys meminfo package time consume:0.6009998321533203
+[2021-01-16 13:18:56,583]INFO:mobileperf:meminfos:time consume for meminfos: 0.6049997806549072
+[2021-01-16 13:18:56,631]DEBUG:mobileperf:cpu_top:8.0 or higher, user_rate: 158, sys: 82,device cpu: 240
+[2021-01-16 13:18:56,632]DEBUG:mobileperf:cpu_top:idle_rate: 158
+[2021-01-16 13:18:56,633]DEBUG:mobileperf:cpu_top:cpuinfos, _parse top target_pck is : com.deskmateones , self.pacakgename : com.deskmateones
+[2021-01-16 13:18:56,633]DEBUG:mobileperf:cpu_top:cpuinfos, into _parse_pck packege is target package, pid is :23439
+[2021-01-16 13:18:56,633]DEBUG:mobileperf:cpu_top:=========== item == col_name: CPU] index : 8
+[2021-01-16 13:18:56,633]DEBUG:mobileperf:cpu_top:package: com.deskmateones, cpu_rate: 50.0
+[2021-01-16 13:18:56,633]DEBUG:mobileperf:cpu_top:{'package': 'com.deskmateones', 'pid': '23439', 'pid_cpu': '50.0', 'uid': 'u0_a63'}
+[2021-01-16 13:18:56,634]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 0.7599935531616211
+[2021-01-16 13:18:56,634]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor save cpu_device_list: ['2021-01-16 13-18-56', '240', '158', '82', '158', 'com.deskmateones', '23439', '50.0']
+[2021-01-16 13:18:56,711]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:18:56,711]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:18:57,088]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.352999210357666
+[2021-01-16 13:18:57,089]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task
+[2021-01-16 13:18:57,247]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task time consume: 0.13699817657470703
+[2021-01-16 13:18:57,248]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774337.248423
+[2021-01-16 13:18:57,248]DEBUG:mobileperf:thread_num:[1610774337.248423, 'com.deskmateones', 23439, 39]
+[2021-01-16 13:18:57,249]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-18-57, processname: com.deskmateones, pid: 23439 thread num: 39
+[2021-01-16 13:18:57,249]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 0.5379993915557861
+[2021-01-16 13:18:59,015]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.live.liveqiniu.LiveCourseDetailsActivity
+[2021-01-16 13:18:59,069]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell input keyevent 25
+[2021-01-16 13:18:59,315]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.live.liveqiniu.LiveCourseDetailsActivity time consume: 0.2799999713897705
+[2021-01-16 13:18:59,315]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:18:59,553]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.21800017356872559
+[2021-01-16 13:18:59,554]DEBUG:mobileperf:fps:[[0, 47973.178683274, 0], [47977.499979438, 47977.499979438, 47977.53407004], [47977.523507198, 47977.523507198, 47977.544113118], [47977.539985184, 47977.539985184, 47977.553885658], [47977.556463096, 47977.556463096, 47977.567438274], [47977.572940727, 47977.572940727, 47977.583038276], [47977.58941871, 47977.58941871, 47977.600292893], [47977.606145729, 47977.606145729, 47977.616146433], [47977.622666879, 47977.622666879, 47977.633959742], [47978.53805016, 47978.53805016, 47978.558888373], [47978.554525814, 47978.554525814, 47978.579756145], [47978.564391872, 47978.564391872, 47978.597423916], [47978.580868796, 47978.580868796, 47978.612738302], [47978.597344678, 47978.597344678, 47978.630594765], [47978.613818676, 47978.613818676, 47978.646700459], [47978.630292405, 47978.630292405, 47978.663197153], [47978.646911008, 47978.646911008, 47978.680099309], [47978.66342627, 47978.66342627, 47978.695604695], [47978.696460679, 47978.696460679, 47978.711709235], [47978.712973649, 47978.712973649, 47978.734567853], [47978.729489003, 47978.729489003, 47978.764066702], [47978.746005085, 47978.746005085, 47978.78267155], [47978.76252418, 47978.76252418, 47978.799525705], [47978.779042356, 47978.779042356, 47978.816956938], [47978.795561625, 47978.795561625, 47978.833538709], [47978.81207841, 47978.81207841, 47978.846923556]]
+[2021-01-16 13:18:59,554]DEBUG:mobileperf:fps:FPS: 4 Jank:2
+[2021-01-16 13:19:00,876]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:19:00,980]DEBUG:mobileperf:meminfos:-----------into _collect_mem_thread loop, thread is : Thread-24
+[2021-01-16 13:19:01,195]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:19:01,333]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell input keyevent 25 time consume: 2.236999034881592
+[2021-01-16 13:19:01,714]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:19:04,017]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.live.liveqiniu.LiveCourseDetailsActivity
+[2021-01-16 13:19:27,596]DEBUG:mobileperf:logcat:launchtime log:01-16 13:19:26.393   573   597 I am_activity_launch_time: [0,17475009,com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity,625,625]
+[2021-01-16 13:22:45,684]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:22:45,685]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones
+[2021-01-16 13:22:45,685]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:22:45,685]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:22:45,685]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-45', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', '625', '625', 'normal launch']
+[2021-01-16 13:22:45,687]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell input keyevent 25
+[2021-01-16 13:22:45,688]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-45', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', 0.62, 0.62, 'normal launch']]
+[2021-01-16 13:22:45,701]DEBUG:mobileperf:logcat:launchtime log:01-16 13:19:43.927   573   597 I am_activity_launch_time: [0,186789547,com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity,601,601]
+[2021-01-16 13:22:45,702]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-45', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', '601', '601', 'normal launch']
+[2021-01-16 13:22:45,703]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-45', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', 0.6, 0.6, 'normal launch']]
+[2021-01-16 13:22:45,735]DEBUG:mobileperf:logcat:launchtime log:01-16 13:20:25.747   573   597 I am_activity_launch_time: [0,82986594,com.deskmateones/.ui.activity.home.HelpCenterActivity,475,475]
+[2021-01-16 13:22:45,735]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-45', 'com.deskmateones/.ui.activity.home.HelpCenterActivity', '475', '475', 'normal launch']
+[2021-01-16 13:22:45,738]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-45', 'com.deskmateones/.ui.activity.home.HelpCenterActivity', 0.47, 0.47, 'normal launch']]
+[2021-01-16 13:22:45,782]DEBUG:mobileperf:logcat:launchtime log:01-16 13:21:48.059   573   597 I am_activity_launch_time: [0,222020976,com.deskmateones/.webview.CommonWebView,1524,1524]
+[2021-01-16 13:22:45,782]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-45', 'com.deskmateones/.webview.CommonWebView', '1524', '1524', 'normal launch']
+[2021-01-16 13:22:45,784]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-45', 'com.deskmateones/.webview.CommonWebView', 1.52, 1.52, 'normal launch']]
+[2021-01-16 13:22:45,803]DEBUG:mobileperf:logcat:launchtime log:01-16 13:22:13.067   573   597 I am_activity_launch_time: [0,125987214,com.deskmateones/.ui.activity.home.LearnActivity,804,804]
+[2021-01-16 13:22:45,803]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-45', 'com.deskmateones/.ui.activity.home.LearnActivity', '804', '804', 'normal launch']
+[2021-01-16 13:22:45,804]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-45', 'com.deskmateones/.ui.activity.home.LearnActivity', 0.8, 0.8, 'normal launch']]
+[2021-01-16 13:22:45,812]DEBUG:mobileperf:logcat:launchtime log:01-16 13:22:27.424   573   597 I am_activity_launch_time: [0,61152748,com.deskmateones/.ui.activity.learn.NewLearnTextActivity,806,806]
+[2021-01-16 13:22:45,812]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-45', 'com.deskmateones/.ui.activity.learn.NewLearnTextActivity', '806', '806', 'normal launch']
+[2021-01-16 13:22:45,813]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-45', 'com.deskmateones/.ui.activity.learn.NewLearnTextActivity', 0.81, 0.81, 'normal launch']]
+[2021-01-16 13:22:45,903]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys SurfaceFlinger --latency com.deskmateones/com.deskmateones.ui.activity.live.liveqiniu.LiveCourseDetailsActivity time consume: 0.18000078201293945
+[2021-01-16 13:22:45,904]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats
+[2021-01-16 13:22:45,999]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.26199913024902344
+[2021-01-16 13:22:46,000]DEBUG:mobileperf:trafficstats: total uid  bytes : 4675512913
+[2021-01-16 13:22:46,000]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 148715 uid pcket byte: 352
+[2021-01-16 13:22:46,001]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774566.0014102
+[2021-01-16 13:22:46,001]DEBUG:mobileperf:trafficstats:[1610774566.0014102, 'com.deskmateones', '10063', 145.23, 352, 125.35, 175, 19.88, 177, 145.23, 0.0, 0.0]
+[2021-01-16 13:22:46,002]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 224.8069884777069
+[2021-01-16 13:22:46,002]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:22:46,003]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:22:46,152]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.42499804496765137
+[2021-01-16 13:22:46,153]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task
+[2021-01-16 13:22:46,254]DEBUG:mobileperf:startup: catch keyboardInterrupt, goodbye!!!
+[2021-01-16 13:22:46,255]DEBUG:mobileperf:cpu_top:INFO: CpuCollector stop...
+[2021-01-16 13:22:46,256]ERROR:mobileperf:startup:'Thread' object has no attribute 'isAlive'
+[2021-01-16 13:22:46,258]DEBUG:mobileperf:meminfos:INFO: MemInfoPackageCollector stop... 
+[2021-01-16 13:22:46,259]ERROR:mobileperf:startup:'Thread' object has no attribute 'isAlive'
+[2021-01-16 13:22:46,259]DEBUG:mobileperf:trafficstats:INFO: TrafficCollecor  stop...
+[2021-01-16 13:22:46,260]ERROR:mobileperf:startup:'Thread' object has no attribute 'isAlive'
+[2021-01-16 13:22:46,761]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:46,761]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:46,761]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:46,761]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:46,762]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.7200005054473877
+[2021-01-16 13:22:46,762]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys gfxinfo com.deskmateones framestats time consume: 0.7890005111694336
+[2021-01-16 13:22:46,763]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell input keyevent 25 time consume: 1.023998498916626
+[2021-01-16 13:22:46,763]INFO:mobileperf:androiddevice:log is none
+[2021-01-16 13:22:46,763]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones time consume: 1.0379996299743652
+[2021-01-16 13:22:46,765]DEBUG:mobileperf:trafficstats: total uid  bytes : 0
+[2021-01-16 13:22:46,765]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys window windows
+[2021-01-16 13:22:46,768]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
+[2021-01-16 13:22:46,769]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 0 uid pcket byte: 0
+[2021-01-16 13:22:46,769]DEBUG:mobileperf:meminfos:dumpsys meminfo package time consume:1.0840017795562744
+[2021-01-16 13:22:46,770]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774566.7704122
+[2021-01-16 13:22:46,771]ERROR:mobileperf:meminfos:package total pss is 0:com.deskmateones
+[2021-01-16 13:22:46,771]INFO:mobileperf:monkey:log is none
+[2021-01-16 13:22:46,772]DEBUG:mobileperf:trafficstats:[1610774566.7704122, 'com.deskmateones', '10063', 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0.0, 0.0]
+[2021-01-16 13:22:46,772]INFO:mobileperf:meminfos:time consume for meminfos: 225.79197931289673
+[2021-01-16 13:22:46,773]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk
+[2021-01-16 13:22:46,773]DEBUG:mobileperf:meminfos:-----------into _collect_mem_thread loop, thread is : Thread-24
+[2021-01-16 13:22:46,774]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.7720012664794922
+[2021-01-16 13:22:46,775]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones
+[2021-01-16 13:22:47,042]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:23.653   573   597 I am_activity_launch_time: [0,179160686,com.deskmateones/.ui.activity.home.CourseActivity,980,980]
+[2021-01-16 13:22:47,043]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-47', 'com.deskmateones/.ui.activity.home.CourseActivity', '980', '980', 'normal launch']
+[2021-01-16 13:22:47,044]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-47', 'com.deskmateones/.ui.activity.home.CourseActivity', 0.98, 0.98, 'normal launch']]
+[2021-01-16 13:22:47,261]ERROR:mobileperf:cpu_top:into cpuinfos error : b'^C'
+[2021-01-16 13:22:47,262]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 1.5779995918273926
+[2021-01-16 13:22:47,262]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:47,263]DEBUG:mobileperf:cpu_top:cpuinfos, can't get cpu info, continue
+[2021-01-16 13:22:47,263]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/23439/task time consume: 1.0910007953643799
+[2021-01-16 13:22:47,264]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:22:47,265]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774567.2654119
+[2021-01-16 13:22:47,265]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:22:47,268]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys window windows time consume: 0.46700024604797363
+[2021-01-16 13:22:47,268]DEBUG:mobileperf:thread_num:[1610774567.2654119, 'com.deskmateones', 23439, 1]
+[2021-01-16 13:22:47,268]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:47,268]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell getprop ro.build.version.sdk time consume: 0.46399974822998047
+[2021-01-16 13:22:47,269]DEBUG:mobileperf:androiddevice:dumpsys window windows命令activity_line_split结果: ['mCurrentFocus=Window{f767c97', 'u0', 'com.deskmateones/com.deskmateones.ui.activity.learn.NewLearnTextActivity}']
+[2021-01-16 13:22:47,271]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-22-47, processname: com.deskmateones, pid: 23439 thread num: 1
+[2021-01-16 13:22:47,271]INFO:mobileperf:androiddevice:log is none
+[2021-01-16 13:22:47,272]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell dumpsys meminfo com.deskmateones time consume: 0.46500062942504883
+[2021-01-16 13:22:47,273]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:22:47,276]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 225.5619821548462
+[2021-01-16 13:22:47,276]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
+[2021-01-16 13:22:47,278]DEBUG:mobileperf:meminfos:dumpsys meminfo package time consume:0.5040013790130615
+[2021-01-16 13:22:47,278]DEBUG:mobileperf:thread_num:-----------into _collect_thread_num_thread loop, thread is : Thread-42
+[2021-01-16 13:22:47,284]ERROR:mobileperf:meminfos:package total pss is 0:com.deskmateones
+[2021-01-16 13:22:47,285]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:22:47,285]INFO:mobileperf:meminfos:time consume for meminfos: 0.5119998455047607
+[2021-01-16 13:22:47,321]INFO:mobileperf:androiddevice:log is none
+[2021-01-16 13:22:47,322]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
+[2021-01-16 13:22:47,385]ERROR:mobileperf:cpu_top:into cpuinfos error : b'^C'
+[2021-01-16 13:22:47,386]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 0.12100028991699219
+[2021-01-16 13:22:47,387]DEBUG:mobileperf:cpu_top:cpuinfos, can't get cpu info, continue
+[2021-01-16 13:22:47,387]DEBUG:mobileperf:cpu_top:---------------cpuinfos, into _collect_package_cpu_thread loop thread is : Thread-23
+[2021-01-16 13:22:47,388]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell top -b -n 1 -d 5
+[2021-01-16 13:22:47,420]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:47,420]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.11400103569030762
+[2021-01-16 13:22:47,421]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:22:47,488]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:47,488]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.17499899864196777
+[2021-01-16 13:22:47,489]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/None/task
+[2021-01-16 13:22:47,662]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:23.653   573   597 I am_activity_launch_time: [0,179160686,com.deskmateones/.ui.activity.home.CourseActivity,980,980]
+[2021-01-16 13:22:47,662]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-47', 'com.deskmateones/.ui.activity.home.CourseActivity', '980', '980', 'normal launch']
+[2021-01-16 13:22:47,663]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-47', 'com.deskmateones/.ui.activity.home.CourseActivity', 0.98, 0.98, 'normal launch']]
+[2021-01-16 13:22:47,917]DEBUG:mobileperf:androiddevice:adb error info:
+b'ls: /proc/None/task: No such file or directory\r\n'
+[2021-01-16 13:22:47,917]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ls -lt /proc/None/task time consume: 0.3529989719390869
+[2021-01-16 13:22:47,918]DEBUG:mobileperf:thread_num:collection time in thread_num info is : 1610774567.9184105
+[2021-01-16 13:22:47,918]DEBUG:mobileperf:thread_num:[1610774567.9184105, 'com.deskmateones', None, 1]
+[2021-01-16 13:22:47,919]DEBUG:mobileperf:thread_num:current time: 2021-01-16 13-22-47, processname: com.deskmateones, pid: None thread num: 1
+[2021-01-16 13:22:47,920]DEBUG:mobileperf:thread_num:time_consume  for thread num infos: 0.6419978141784668
+[2021-01-16 13:22:47,930]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:44.436   573   597 I am_activity_launch_time: [0,184619982,com.deskmateones/.ui.activity.live.LiveHomeNewTwoActivity,1256,1256]
+[2021-01-16 13:22:47,931]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-47', 'com.deskmateones/.ui.activity.live.LiveHomeNewTwoActivity', '1256', '1256', 'normal launch']
+[2021-01-16 13:22:47,931]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-47', 'com.deskmateones/.ui.activity.live.LiveHomeNewTwoActivity', 1.26, 1.26, 'normal launch']]
+[2021-01-16 13:22:47,964]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:47.970   573   597 I am_activity_launch_time: [0,254738683,com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity,1659,1659]
+[2021-01-16 13:22:47,965]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-47', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', '1659', '1659', 'normal launch']
+[2021-01-16 13:22:47,966]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-47', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', 1.66, 1.66, 'normal launch']]
+[2021-01-16 13:22:47,976]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.530998706817627
+[2021-01-16 13:22:48,020]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell kill 5037
+[2021-01-16 13:22:48,175]DEBUG:mobileperf:logcat:launchtime log:01-16 13:19:26.393   573   597 I am_activity_launch_time: [0,17475009,com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity,625,625]
+[2021-01-16 13:22:48,176]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-48', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', '625', '625', 'normal launch']
+[2021-01-16 13:22:48,178]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-48', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', 0.62, 0.62, 'normal launch']]
+[2021-01-16 13:22:48,289]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell kill 5037 time consume: 0.2480001449584961
+[2021-01-16 13:22:48,290]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell monkey -p com.deskmateones -v -v -v -s 1000 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --kill-process-after-error --pct-appswitch 20 --pct-touch 40 --pct-motion 10 --pct-trackball 0 --pct-anyevent 10 --pct-flip 0 --pct-pinchzoom 0 --throttle 1000 1200000000
+[2021-01-16 13:22:48,293]DEBUG:mobileperf:logcat:launchtime log:01-16 13:19:43.927   573   597 I am_activity_launch_time: [0,186789547,com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity,601,601]
+[2021-01-16 13:22:48,301]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-48', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', '601', '601', 'normal launch']
+[2021-01-16 13:22:48,302]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-48', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', 0.6, 0.6, 'normal launch']]
+[2021-01-16 13:22:48,401]DEBUG:mobileperf:cpu_top:8.0 or higher, user_rate: 112, sys: 200,device cpu: 312
+[2021-01-16 13:22:48,402]DEBUG:mobileperf:cpu_top:idle_rate: 86
+[2021-01-16 13:22:48,402]DEBUG:mobileperf:cpu_top:cpuinfos, _parse top target_pck is : com.deskmateones , self.pacakgename : com.deskmateones
+[2021-01-16 13:22:48,407]DEBUG:mobileperf:cpu_top:cpuinfos, into _parse_pck packege is target package, pid is :23439
+[2021-01-16 13:22:48,408]DEBUG:mobileperf:cpu_top:=========== item == col_name: CPU] index : 8
+[2021-01-16 13:22:48,408]DEBUG:mobileperf:cpu_top:package: com.deskmateones, cpu_rate: 0.0
+[2021-01-16 13:22:48,408]DEBUG:mobileperf:cpu_top:{'package': 'com.deskmateones', 'pid': '23439', 'pid_cpu': '0.0', 'uid': 'u0_a63'}
+[2021-01-16 13:22:48,409]DEBUG:mobileperf:cpu_top:  ============== time consume for cpu info : 1.021003007888794
+[2021-01-16 13:22:48,414]DEBUG:mobileperf:cpu_top:INFO: CpuMonitor save cpu_device_list: ['2021-01-16 13-22-48', '312', '112', '200', '86', 'com.deskmateones', '23439', '0.0']
+[2021-01-16 13:22:48,499]DEBUG:mobileperf:logcat:launchtime log:01-16 13:20:25.747   573   597 I am_activity_launch_time: [0,82986594,com.deskmateones/.ui.activity.home.HelpCenterActivity,475,475]
+[2021-01-16 13:22:48,499]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-48', 'com.deskmateones/.ui.activity.home.HelpCenterActivity', '475', '475', 'normal launch']
+[2021-01-16 13:22:48,500]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-48', 'com.deskmateones/.ui.activity.home.HelpCenterActivity', 0.47, 0.47, 'normal launch']]
+[2021-01-16 13:22:48,839]DEBUG:mobileperf:logcat:launchtime log:01-16 13:21:48.059   573   597 I am_activity_launch_time: [0,222020976,com.deskmateones/.webview.CommonWebView,1524,1524]
+[2021-01-16 13:22:48,839]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-48', 'com.deskmateones/.webview.CommonWebView', '1524', '1524', 'normal launch']
+[2021-01-16 13:22:48,840]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-48', 'com.deskmateones/.webview.CommonWebView', 1.52, 1.52, 'normal launch']]
+[2021-01-16 13:22:48,995]DEBUG:mobileperf:logcat:launchtime log:01-16 13:22:13.067   573   597 I am_activity_launch_time: [0,125987214,com.deskmateones/.ui.activity.home.LearnActivity,804,804]
+[2021-01-16 13:22:48,996]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-48', 'com.deskmateones/.ui.activity.home.LearnActivity', '804', '804', 'normal launch']
+[2021-01-16 13:22:48,997]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-48', 'com.deskmateones/.ui.activity.home.LearnActivity', 0.8, 0.8, 'normal launch']]
+[2021-01-16 13:22:49,073]DEBUG:mobileperf:logcat:launchtime log:01-16 13:22:27.424   573   597 I am_activity_launch_time: [0,61152748,com.deskmateones/.ui.activity.learn.NewLearnTextActivity,806,806]
+[2021-01-16 13:22:49,073]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-49', 'com.deskmateones/.ui.activity.learn.NewLearnTextActivity', '806', '806', 'normal launch']
+[2021-01-16 13:22:49,074]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-49', 'com.deskmateones/.ui.activity.learn.NewLearnTextActivity', 0.81, 0.81, 'normal launch']]
+[2021-01-16 13:22:49,417]INFO:mobileperf:androiddevice:log is none
+[2021-01-16 13:22:49,418]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
+[2021-01-16 13:22:49,428]INFO:mobileperf:monkey:log is none
+[2021-01-16 13:22:49,428]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:22:49,732]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:23.653   573   597 I am_activity_launch_time: [0,179160686,com.deskmateones/.ui.activity.home.CourseActivity,980,980]
+[2021-01-16 13:22:49,733]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-49', 'com.deskmateones/.ui.activity.home.CourseActivity', '980', '980', 'normal launch']
+[2021-01-16 13:22:49,734]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-49', 'com.deskmateones/.ui.activity.home.CourseActivity', 0.98, 0.98, 'normal launch']]
+[2021-01-16 13:22:49,916]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:49,917]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.47299933433532715
+[2021-01-16 13:22:49,918]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:22:49,927]INFO:mobileperf:androiddevice:log is none
+[2021-01-16 13:22:49,927]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
+[2021-01-16 13:22:50,019]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:50,019]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.08400082588195801
+[2021-01-16 13:22:50,020]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell monkey -p com.deskmateones -v -v -v -s 1000 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --kill-process-after-error --pct-appswitch 20 --pct-touch 40 --pct-motion 10 --pct-trackball 0 --pct-anyevent 10 --pct-flip 0 --pct-pinchzoom 0 --throttle 1000 1200000000
+[2021-01-16 13:22:50,046]INFO:mobileperf:androiddevice:log is none
+[2021-01-16 13:22:50,046]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
+[2021-01-16 13:22:50,145]INFO:mobileperf:monkey:log is none
+[2021-01-16 13:22:50,145]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:22:50,150]INFO:mobileperf:androiddevice:log is none
+[2021-01-16 13:22:50,151]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
+[2021-01-16 13:22:50,245]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:50,245]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.07599949836730957
+[2021-01-16 13:22:50,247]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A
+[2021-01-16 13:22:50,283]INFO:mobileperf:androiddevice:log is none
+[2021-01-16 13:22:50,285]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
+[2021-01-16 13:22:50,422]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:50,423]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell ps -A time consume: 0.1510024070739746
+[2021-01-16 13:22:50,424]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell monkey -p com.deskmateones -v -v -v -s 1000 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --kill-process-after-error --pct-appswitch 20 --pct-touch 40 --pct-motion 10 --pct-trackball 0 --pct-anyevent 10 --pct-flip 0 --pct-pinchzoom 0 --throttle 1000 1200000000
+[2021-01-16 13:22:50,472]INFO:mobileperf:androiddevice:log is none
+[2021-01-16 13:22:50,473]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
+[2021-01-16 13:22:50,583]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell input keyevent 25
+[2021-01-16 13:22:50,715]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:23.653   573   597 I am_activity_launch_time: [0,179160686,com.deskmateones/.ui.activity.home.CourseActivity,980,980]
+[2021-01-16 13:22:50,716]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-50', 'com.deskmateones/.ui.activity.home.CourseActivity', '980', '980', 'normal launch']
+[2021-01-16 13:22:50,717]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-50', 'com.deskmateones/.ui.activity.home.CourseActivity', 0.98, 0.98, 'normal launch']]
+[2021-01-16 13:22:50,892]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:44.436   573   597 I am_activity_launch_time: [0,184619982,com.deskmateones/.ui.activity.live.LiveHomeNewTwoActivity,1256,1256]
+[2021-01-16 13:22:50,892]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-50', 'com.deskmateones/.ui.activity.live.LiveHomeNewTwoActivity', '1256', '1256', 'normal launch']
+[2021-01-16 13:22:50,893]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-50', 'com.deskmateones/.ui.activity.live.LiveHomeNewTwoActivity', 1.26, 1.26, 'normal launch']]
+[2021-01-16 13:22:50,938]DEBUG:mobileperf:logcat:launchtime log:01-16 13:18:47.970   573   597 I am_activity_launch_time: [0,254738683,com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity,1659,1659]
+[2021-01-16 13:22:50,938]DEBUG:mobileperf:logcat:Launch Info: ['2021-01-16 13-22-50', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', '1659', '1659', 'normal launch']
+[2021-01-16 13:22:50,939]DEBUG:mobileperf:logcat:save launchtime data to csv: [['2021-01-16 13-22-50', 'com.deskmateones/.ui.activity.live.liveqiniu.LiveCourseDetailsActivity', 1.66, 1.66, 'normal launch']]
+[2021-01-16 13:22:51,005]DEBUG:mobileperf:trafficstats:----------------- into _collect_traffic_thread loop thread is : Thread-25, current uid is : 10063
+[2021-01-16 13:22:51,005]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats
+[2021-01-16 13:22:51,152]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:51,152]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell cat /proc/net/xt_qtaguid/stats time consume: 0.1270005702972412
+[2021-01-16 13:22:51,153]DEBUG:mobileperf:trafficstats: total uid  bytes : 0
+[2021-01-16 13:22:51,153]DEBUG:mobileperf:trafficstats:TrafficSnapshot, package: com.deskmateones uid bytes: 0 uid pcket byte: 0
+[2021-01-16 13:22:51,153]DEBUG:mobileperf:trafficstats: collection time in traffic is : 1610774571.1534123
+[2021-01-16 13:22:51,153]DEBUG:mobileperf:trafficstats:[1610774571.1534123, 'com.deskmateones', '10063', 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0.0, 0.0]
+[2021-01-16 13:22:51,154]DEBUG:mobileperf:trafficstats: -----------traffic timeconsumed: 0.1490006446838379
+[2021-01-16 13:22:51,161]DEBUG:mobileperf:androiddevice:adb error info:
+b'^C'
+[2021-01-16 13:22:51,161]INFO:mobileperf:androiddevice:adb -s 6S192333465E050E shell input keyevent 25 time consume: 0.556999921798706
+[2021-01-16 13:22:51,165]INFO:mobileperf:androiddevice:log is none
+[2021-01-16 13:22:51,165]DEBUG:mobileperf:androiddevice:adb -s 6S192333465E050E shell logcat -v threadtime  -b all
